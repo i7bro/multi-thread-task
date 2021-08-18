@@ -50,7 +50,7 @@ public class SynchronizedStorage implements Storage {
                 e.printStackTrace();
             }
         }
-        logger.info("Data read, value: {}", randoms.remove(0));
+        logger.info("Data read, value: {}", randoms.remove(randoms.size() - 1));
         try {
             Thread.sleep(sleepTime);
         } catch (InterruptedException e) {
