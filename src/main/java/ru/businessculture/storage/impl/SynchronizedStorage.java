@@ -27,6 +27,7 @@ public class SynchronizedStorage implements Storage {
             try {
                 wait();
             } catch (InterruptedException e) {
+                logger.error("Thread is interrupted. Cause {}", e.getCause().toString());
                 e.printStackTrace();
             }
         }
@@ -36,6 +37,7 @@ public class SynchronizedStorage implements Storage {
         try {
             Thread.sleep(sleepTime);
         } catch (InterruptedException e) {
+            logger.error("Thread is interrupted. Cause {}", e.getCause().toString());
             e.printStackTrace();
         }
         notify();
@@ -47,6 +49,7 @@ public class SynchronizedStorage implements Storage {
             try {
                 wait();
             } catch (InterruptedException e) {
+                logger.error("Thread is interrupted. Cause {}", e.getCause().toString());
                 e.printStackTrace();
             }
         }
@@ -54,6 +57,7 @@ public class SynchronizedStorage implements Storage {
         try {
             Thread.sleep(sleepTime);
         } catch (InterruptedException e) {
+            logger.error("Thread is interrupted. Cause {}", e.getCause().toString());
             e.printStackTrace();
         }
 
