@@ -1,7 +1,7 @@
 # multi-thread-task
 
 To start the application, need to invoke main method in MultiThreadTaskApplication class.
-In appliation.properties is values value.times = repeat mites, value.range = reange of ramdom, value.sleep.timeaureaure
+In appliation.properties is values value.times = repeat mites, value.range = reange of random, value.sleep.time
 
 Expected output of application:
 
